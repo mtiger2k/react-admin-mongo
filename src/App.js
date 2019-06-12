@@ -12,8 +12,8 @@ const dataProvider = myDataProvider('http://localhost:4000/api/v1', httpClient);
 const App = () => {
   return (
     <Admin dataProvider={dataProvider} authProvider={authProvider} >
-      <Resource name="post" list={PostList} edit={PostEdit} create={PostCreate} />
-      <Resource name="user" list={UserList} show={ShowGuesser} edit={EditGuesser} />
+      <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} />
+      <Resource name="users" list={UserList} show={ShowGuesser} edit={EditGuesser} />
     </Admin>
   )
 }
